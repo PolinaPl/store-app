@@ -1,18 +1,17 @@
 package pro.sky.storeapp.model;
-
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 @SessionScope
 public class Busket {
     private final List<Integer> items = new ArrayList<>();
 
-    public List<Integer> addItems(List<Integer> ids) {
-        items.addAll(ids);
+    public List<Integer> addItems(List<Integer> id) {
+        items.addAll(id);
         return items;
     }
 

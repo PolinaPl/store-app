@@ -14,8 +14,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public List<Integer> addItems(List<Integer> ids) {
-        return busket.addItems(ids);
+    public List<Integer> addItems(List<Integer> id) {
+        return busket.addItems(id);
     }
 
     @Override

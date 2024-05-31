@@ -18,8 +18,8 @@ public class OrderController {
     }
 
     @GetMapping("/add")
-    public List<Integer> addItems(@RequestParam List<Integer> ids) {
-        return orderService.addItems(ids);
+    public List<Integer> addItems(@RequestParam List<Integer> id) {
+        return orderService.addItems(id);
     }
 
     @GetMapping("/get")
